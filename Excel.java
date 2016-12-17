@@ -26,7 +26,6 @@ public class Excel {
 	  XSSFSheet ws=wb.getSheet("Sheet1");
 	  Iterator<Row> row= ws.iterator();
 	 // row.next();
-	  //Row r=row.next();
 	  while (row.hasNext()) {
 		  Row r=row.next();
 	 d.findElement(By.name("firstName")).sendKeys(r.getCell(0).getStringCellValue());
